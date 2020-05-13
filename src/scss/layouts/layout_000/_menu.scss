@@ -1,0 +1,131 @@
+.menuWrapper {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 99999;
+  transition: all 0.5s;
+
+  @include e(show) {
+    right: 0;
+  }
+}
+
+.nav {
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  position: fixed;
+  z-index: 99999;
+  height: 100%;
+  padding: 0;
+  padding-right: 100px;
+  margin: 0;
+  box-shadow: inset -1px 0px 3px rgb(255, 0, 0), 0 0 3px rgb(255, 0, 0);
+  /*border-right: 1px solid rgb(255, 0, 0);*/
+  border-radius: 0 50% 50% 0;
+  transform-origin: 0 center;
+  transform: rotateY(90deg);
+  transition: all 0.5s;
+
+  @include e(show) {
+    transform: rotateY(0deg);
+  }
+}
+
+.filterClose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: -20px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    right: -2px;
+    border-radius: 50%;
+    background: linear-gradient(
+      rgb(255, 0, 0),
+      rgb(255, 255, 0),
+      rgb(0, 255, 0),
+      rgb(0, 195, 255),
+      rgb(0, 0, 255),
+      rgb(183, 0, 255),
+      rgb(255, 0, 179),
+      rgb(255, 0, 0)
+    );
+    right: -1px;
+    z-index: -1;
+  }
+
+  %filterCloseLine {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+  }
+
+  @include e(line) {
+    @extend %filterCloseLine;
+    transform: rotate(-45deg);
+
+    &::after {
+      @extend %filterCloseLine;
+      content: "";
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.filters::-webkit-scrollbar {
+  width: 0px;
+}
+
+.filters {
+  padding: 10px;
+  list-style: none;
+  overflow-y: scroll;
+
+  @include e(item) {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0 10px 10px 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &::before {
+      content: ">";
+      display: inline-block;
+      padding-right: 5px;
+      color: red;
+      width: 0px;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+    &:hover {
+      padding-right: 0;
+
+      &::before {
+        width: 10px;
+        opacity: 1;
+      }
+    }
+  }
+}

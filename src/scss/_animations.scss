@@ -1,0 +1,148 @@
+@keyframes caption {
+  0% {
+    color: red;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 20px red;
+  }
+  5% {
+    color: black;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+  7% {
+    color: green;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 20px green;
+  }
+  15% {
+    color: black;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+  30% {
+    color: blue;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 20px blue;
+  }
+  50% {
+    color: black;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+  100% {
+    color: yellow;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    text-shadow: 0 0 20px yellow;
+  }
+}
+@keyframes headerLinks {
+  0% {
+    box-shadow: 0 0 5px 5px rgb(255, 0, 0);
+    background: rgb(255, 0, 0);
+  }
+  14% {
+    box-shadow: 0 0 5px 5px rgb(255, 255, 0);
+    background: rgb(255, 255, 0);
+  }
+  28% {
+    box-shadow: 0 0 5px 5px rgb(0, 255, 0);
+    background: rgb(0, 255, 0);
+  }
+  42% {
+    box-shadow: 0 0 5px 5px rgb(0, 195, 255);
+    background: rgb(0, 195, 255);
+  }
+  56% {
+    box-shadow: 0 0 5px 5px rgb(0, 0, 255);
+    background: rgb(0, 0, 255);
+  }
+  70% {
+    box-shadow: 0 0 5px 5px rgb(183, 0, 255);
+    background: rgb(183, 0, 255);
+  }
+  84% {
+    box-shadow: 0 0 5px 5px rgb(255, 0, 179);
+    background: rgb(255, 0, 179);
+  }
+  100% {
+    box-shadow: 0 0 5px 5px rgb(255, 0, 0);
+    background: rgb(255, 0, 0);
+  }
+}
+@keyframes blinkLamps {
+  0% {
+    opacity: 1;
+    box-shadow: 0 0 5px 5px rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+  }
+  5% {
+    opacity: 0.5;
+    box-shadow: 0 0 5px 5px rgb(255, 0, 0);
+    background: rgb(255, 0, 0);
+  }
+  10% {
+    opacity: 1;
+    box-shadow: 0 0 5px 5px rgb(255, 255, 0);
+    background: rgb(255, 255, 0);
+  }
+  20% {
+    opacity: 0;
+    box-shadow: 0 0 5px 5px rgb(0, 255, 0);
+    background: rgb(0, 255, 0);
+  }
+  25% {
+    opacity: 0.7;
+    box-shadow: 0 0 5px 5px rgb(0, 195, 255);
+    background: rgb(0, 195, 255);
+  }
+  30% {
+    opacity: 0.2;
+    box-shadow: 0 0 5px 5px rgb(0, 0, 255);
+    background: rgb(0, 0, 255);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 5px 5px rgb(183, 0, 255);
+    background: rgb(183, 0, 255);
+  }
+  70% {
+    opacity: 0;
+    box-shadow: 0 0 5px 5px rgb(255, 0, 179);
+    background: rgb(255, 0, 179);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 5px 5px rgb(255, 0, 0);
+    background: rgb(255, 0, 0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes prevAnim {
+  0% {
+    padding-left: 7px;
+  }
+  50% {
+    padding-left: 12px;
+  }
+  100% {
+    padding-left: 7px;
+  }
+}
+@keyframes nextAnim {
+  0% {
+    padding-right: 7px;
+  }
+  50% {
+    padding-right: 12px;
+  }
+  100% {
+    padding-right: 7px;
+  }
+}

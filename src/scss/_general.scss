@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background: #000 url(../img/bg.jpg) center 0 fixed;
+  background-size: cover;
+}
+.container {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+.container__header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  padding-top: 20px;
+}

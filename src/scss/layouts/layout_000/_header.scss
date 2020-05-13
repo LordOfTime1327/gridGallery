@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #000;
+  box-shadow: inset 0px -15px 10px -15px rgba(255, 255, 255, 0.4);
+
+  @include e(caption) {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    color: #000;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    text-decoration: none;
+    animation: caption 1.5s linear infinite;
+    cursor: pointer;
+  }
+}
+
+.filterIcon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  /*box-shadow: 0 0 5px 5px rgba(255, 255, 255, 1);
+      background: rgba(255, 255, 255, 0.8);*/
+  cursor: pointer;
+  animation: headerLinks 3s linear infinite;
+}
+
+.poweredBy {
+  @include e(img) {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    /*box-shadow: 0 0 5px 5px rgba(255, 255, 255, 1);
+      background: rgba(255, 255, 255, 0.8);*/
+    animation: headerLinks 3s linear infinite;
+  }
+}

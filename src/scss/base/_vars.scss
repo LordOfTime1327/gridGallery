@@ -1,0 +1,32 @@
+//fonts
+$google-font: "https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap";
+
+$baseFontSize: 16px;
+
+$ProximaNova: "Proxima Nova";
+$Roboto: "Roboto";
+
+$mainFont: $ProximaNova;
+$secondaryFont: $Roboto;
+
+$thinWeight: 100;
+$extraLightWeight: 200;
+$lightWeight: 300;
+$regularWeight: 400;
+$mediumWeight: 500;
+$semiBoldWeight: 600;
+$boldWeight: 700;
+$extraBoldWeight: 800;
+$blackWeight: 900;
+
+// Paths
+$imagesPath: "../img/";
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+
+$transparentRed: rgba(180, 0, 0, 0.5);
+$transparentGray: rgba(158, 158, 158, 0.3);
+$red: #8e0000;
+$darkerWhite: #fbfbfb;

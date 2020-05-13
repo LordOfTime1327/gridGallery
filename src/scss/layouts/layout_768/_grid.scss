@@ -1,0 +1,10 @@
+.grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+}
+
+.zoomed {
+  width: auto;
+  height: 90%;
+  z-index: 999;
+}

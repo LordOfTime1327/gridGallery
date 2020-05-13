@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container container__header">
+        <img src="img/filter.png" alt="" id="filterIcon" class="filterIcon" />
+        <div class="blink"></div>
+        <div class="blink"></div>
+        <div class="blink"></div>
+        <h1 class="header__caption">GridGallery</h1>
+        <div class="blink"></div>
+        <div class="blink"></div>
+        <div class="blink"><div>
+        <a
+          href="https://www.linkedin.com/in/dmitryi-kaminskyi-224254189/"
+          target="_blank"
+          class="poweredBy"
+        >
+          <img src="img/linkedin.png" alt="" class="poweredBy__img" />
+        </a>
+      </div>
+    </header>
+
+    <div id="menuWrapper" class="menuWrapper"></div>
+    <nav id="nav" class="nav">
+      <div id="filterClose" class="filterClose">
+        <span class="filterClose__line"></span>
+      </div>
+      <ul id="filters" class="filters">
+        <li class="filters__item" data-filter="all">all</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div id="grid" class="grid">
+        <div class="block">
+          <img src="gallery/new/bg1.jpg" alt="" class="block__img" />
+          <div class="set">
+            <img src="img/zoom.png" alt="" class="zoom" />
+            <div class="topLeft"></div>
+            <div class="topRight"></div>
+            <div class="bottomLeft"></div>
+            <div class="bottomRight"></div>
+            <a href="" download=""
+              ><img src="img/download.png" alt="" class="download"
+            /></a>
+          </div>
+        </div>
+        <div class="block">
+          <img src="gallery/new/bg2.jpg" alt="" class="block__img" />
+          <div class="set">
+            <img src="img/zoom.png" alt="" class="zoom" />
+            <div class="topLeft"></div>
+            <div class="topRight"></div>
+            <div class="bottomLeft"></div>
+            <div class="bottomRight"></div>
+            <a href="" download=""
+              ><img src="img/download.png" alt="" class="download"
+            /></a>
+          </div>
+        </div>
+        <div class="block">
+          <img src="gallery/new/bg3.jpg" alt="" class="block__img" />
+          <div class="set">
+            <img src="img/zoom.png" alt="" class="zoom" />
+            <div class="topLeft"></div>
+            <div class="topRight"></div>
+            <div class="bottomLeft"></div>
+            <div class="bottomRight"></div>
+            <a href="" download=""
+              ><img src="img/download.png" alt="" class="download"
+            /></a>
+          </div>
+        </div>
+        <div class="block">
+          <img src="gallery/night/bg10.jpg" alt="" class="block__img" />
+          <div class="set">
+            <img src="img/zoom.png" alt="" class="zoom" />
+            <div class="topLeft"></div>
+            <div class="topRight"></div>
+            <div class="bottomLeft"></div>
+            <div class="bottomRight"></div>
+            <a href="" download=""
+              ><img src="img/download.png" alt="" class="download"
+            /></a>
+          </div>
+        </div>
+        <div class="block">
+          <img src="gallery/night/bg12.jpg" alt="" class="block__img" />
+          <div class="set">
+            <img src="img/zoom.png" alt="" class="zoom" />
+            <div class="topLeft"></div>
+            <div class="topRight"></div>
+            <div class="bottomLeft"></div>
+            <div class="bottomRight"></div>
+            <a href="" download=""
+              ><img src="img/download.png" alt="" class="download"
+            /></a>
+          </div>
+        </div>
+        <div class="block">
+          <img src="gallery/night/bg5.jpg" alt="" class="block__img" />
+          <div class="set">
+            <img src="img/zoom.png" alt="" class="zoom" />
+            <div class="topLeft"></div>
+            <div class="topRight"></div>
+            <div class="bottomLeft"></div>
+            <div class="bottomRight"></div>
+            <a href="" download=""
+              ><img src="img/download.png" alt="" class="download"
+            /></a>
+          </div>
+        </div>
+        <div class="block">
+          <img src="gallery/cars/pS6I17hmCI0.jpg" alt="" class="block__img" />
+          <div class="set">
+            <img src="img/zoom.png" alt="" class="zoom" />
+            <div class="topLeft"></div>
+            <div class="topRight"></div>
+            <div class="bottomLeft"></div>
+            <div class="bottomRight"></div>
+            <a href="" download=""
+              ><img src="img/download.png" alt="" class="download"
+            /></a>
+          </div>
+        </div>
+        <div class="block">
+          <img
+            src="gallery/lolololol/13313855791961.png"
+            alt=""
+            class="block__img"
+          />
+          <div class="set">
+            <img src="img/zoom.png" alt="" class="zoom" />
+            <div class="topLeft"></div>
+            <div class="topRight"></div>
+            <div class="bottomLeft"></div>
+            <div class="bottomRight"></div>
+            <a href="" download=""
+              ><img src="img/download.png" alt="" class="download"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="bigImg">
+        <div id="close" class="closeBlock" onclick="closeBigImg()">
+          <img class="close" src="img/close.png" alt="" />
+        </div>
+        <div id="prev" class="prevBlock" onclick="prevNextImg(-1)">
+          <img src="img/prev.png" alt="" class="prev" />
+        </div>
+        <div id="next" class="nextBlock" onclick="prevNextImg(1)">
+          <img src="img/next.png" alt="" class="next" />
+        </div>
+      </div>
+    </div>
+
+    <!--<button onclick="myFunction()">Try it</button>
+    <div id="demo"></div>-->
+
+    <!--<script>
+      <?php
+        $folder = 'img/';
+        $subfolder = scandir($folder);
+        $array_to_js = 'var imagesMassive = [';
+        for($i=2; $i<=sizeof($subfolder)-1; $i++){ 
+          $all_subfolder_files = scandir($folder.$subfolder[$i].'/');
+          for($j=2; $j<=sizeof($all_subfolder_files)-1; $j++){
+            $array_to_js.= '"'.$folder.$subfolder[$i].'/'.$all_subfolder_files[$j].'", ';
+          }
+        }
+        echo substr($array_to_js, 0, -1).'];';
+      ?>
+    </script>-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
